@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Index.html">Inicio</a>
+            <a href="Enlaces.html">Enlaces y Textos</a>
+            <a href="Listas.html">Listas</a>
+            <a href="Tablas.html">Tablas</a>
+            <a href="#">Sobre Nosotros</a>
+            <a href="html5.html">nuevas etiquetas</a>
+            <a href="Formularios.html">Formularios</a>
+            <hr>
+            </nav>
+        </header>
+        <main>
+            <h1>
+                Formularios en HTML5
+            </h1>
+            <!-- La etiqueta <form> es la que identifica a los formularios, hay una por formulario, no se debe utilizar en cada campo individual-->
+            <form action="formulario.html" method="post">
+                <p>
+                <label for="nombre_principal">Nombre:</label>
+                <input id="nombre_principal" type="text" name="Nombre" placeholder="Nombre"/>
+                </p>
+                <p>
+                <label for="Primer_Apellido">Apellido:</label>
+                <input id="Primer_Apellido" type="text" name="Apellido" placeholder="Primer Apellido">
+                </p>
+                <p>
+                    <label for="password">password:</label>
+                    <input type="password" name="password" id="password" placeholder="contraseña">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio </title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <p><b>Descripción: </b>Formulario con Fieldsets, Multiples checkboxes y Validaciónes Avanzadas</p>
+        </div>
+        <form action="ExerciceF3.html" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <p>
+                    <label for="Nombre">Nombre:</label>
+                    <br>
+                    <input type="text" id="Nombre">
+                </p>
+                <p>
+                    <label for="Apellidos">Apellidos:</label>
+                    <br>
+                    <input type="text" id="Apellidos">
+                </p>
+                <p>
+                    <label for="DNI">DNI:</label>
+                    <br>
+                    <input type="text" id="DNI" placeholder="12345678A">
+                </p>
+                <p>
+                    <label for="Telefono">Telefono:</label>
+                    <br>
+                    <input type="text" id="Telefono" placeholder="612345678">
+                </p>
+                <p>
+                    <label for="Email">Email:</label>
+                    <br>
+                    <input type="text" id="email">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Información del Curso</legend>
+                <p>
+                    <label for="Ciclo">Ciclo Formativo</label>
+                    <br>
+                    <select name="Ciclo" id="Ciclo">
+                        <option value="">--Selecciona un Ciclo--</option>
+                        <option value="SMR">SMR</option>
+                        <option value="DAM">DAM</option>
+                    </select>
+                </p>
+                <p>
+                    Curso:
+                    <br>
+                    <br>
+                    <input type="radio" name="Curso1" value="1º" id="1º">
+                    <label for="Curso1">Primero</label>
+                    <br>
+                    <input type="radio" name="Curso2" value="2º" id="2º">
+                    <label for="Curso2">Segundo</label>
+                </p>
+                <p>
+                    <Label for="Turno">Turno:</Label>
+                    <br>
+                    <select name="Turno" id="Turno">
+                        <option value="">--Selecciona--</option>
+                        <option value="Mañanas">Mañanas</option>
+                        <option value="Tardes">Tardes</option>
+                    </select>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Experiencia Previa</legend>
+                <p>
+                    Has estudiado programación Anteriormente?
+                    <br>
+                    <br>
+                    <input type="radio" name="EstudiosAnteriores?" value="Sí" id="Sí">
+                    <label for="Sí">Sí</label>
+                    <br>
+                    <input type="radio" name="EstudiosAnteriores?" value="No" id="No">
+                    <label for="No">No</label>
+                </p>
+                <p>
+                    Lenguajes de programación que conoces (si aplica):
+                    <br>
+                    <br>
+                    <input type="checkbox" name="Lenguajes" id="Java" value="java">
+                    <label for="">Java</label>
+                    <br>
+                    <input type="checkbox" name="Lenguajes" id="Python" value="Python">
+                    <label for="">Python</label>
+                    <br>
+                    <input type="checkbox" name="Lenguajes" id="JavaScript" value="JS">
+                    <label for="">JavaScript</label>
+                    <br>
+                    <input type="checkbox" name="Lenguajes" id="C#" value=""C#>
+                    <label for="">C#</label>
+                    <br>
+                    <input type="checkbox" name="Lenguajes" id="PHP" value="PHP">
+                    <label for="">PHP</label>
+                    <br>
+                </p>
+            </fieldset>
+
+
+
+        </form>
+    </main>
+</body>
+</html>

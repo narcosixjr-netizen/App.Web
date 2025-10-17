@@ -1,7 +1,30 @@
-* {
-    background-color: coral;
+body {
+    background-color: rgba(190, 20, 25, 0.01);
 }
-h1 {
-    color: white;
+
+nav {
+    background-color: rgb( 231, 118, 42);
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h2 {
+    /* esto es una agrupación de selectores*/
+    color: brown;
+    text-align: center;
+}
+
+p {
+    color: red;
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#miDiv {
+    /* esto es un selector apuntando a un id */
+    background-color: lightgreen;
+    border: 2px solid blue;
+    padding: 15px;
+    margin: 20px;
     text-align: center;
 }

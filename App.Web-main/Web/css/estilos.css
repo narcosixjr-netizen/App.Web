@@ -1,8 +1,10 @@
 body {
+    /*esto es un selector apuntando a toda la pagina visible */
     background-color: rgba(190, 20, 25, 0.01);
 }
 
 nav {
+    /*esto es un selector apuntando a una etiqueta */
     background-color: rgb( 231, 118, 42);
     padding: 10px;
     text-align: center;
@@ -15,6 +17,7 @@ h1, h2 {
 }
 
 p {
+    /*esto es un selector apuntando a una etiqueta */
     color: red;
     font-family: verdana;
     font-size: 20px;
@@ -22,9 +25,31 @@ p {
 
 #miDiv {
     /* esto es un selector apuntando a un id */
+    /* esto cambia el color de fondo del div */
     background-color: lightgreen;
+    /* esto crea un borde, cambia el grosor y lo colorea */
     border: 2px solid blue;
+    /* esto añade espacio entre el texto y el borde*/
     padding: 15px;
+    /* esto añade espacio entre el borde y los demas elementos */
     margin: 20px;
+    /* esto centra el texto dentro del div */
     text-align: center;
+}
+
+.textoazul {
+    /* esto es un selector apuntando a una clase */
+    /* para usarlo en html se usa class="textoazul" */
+    /* se puede hacer en RGB (255, 255, 255) */
+    /* para rgba se usa (255, 255, 255, 1) */
+    /* se puede usar tambien en formato hexadecimal #FFFFFF */
+    /* se puede dar tranparencia con hex
+    /* algunos colores esta predefinidos como red, blue, green, black, white, yellow, purple, brown, orange, pink, gray... */
+    color: blue;
+}
+
+.textogrande {
+    /* esto es un selector apuntando a una clase */
+    /* con esto cambias el tamaño de texto */
+    font-size: 30px;
 }

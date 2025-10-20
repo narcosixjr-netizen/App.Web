@@ -73,14 +73,45 @@
         /* TU CÓDIGO AQUÍ */
         .header-fijo {
             /* Completa según el enunciado */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000; /*esto asegura que el header esté sobre otros elementos*/
         }
         
         .boton-flotante {
             /* Completa según el enunciado */
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.4);
+            z-index: 1000; /*esto asegura que el botón esté sobre otros elementos*/
         }
         
         .sidebar-fijo {
             /* Completa según el enunciado */
+            position: fixed;
+            left: 0;
+            top: 80px; /*debajo del header*/
+            width: 200px;
+            height: calc(100vh - 80px); /*altura completa menos el header*/
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            overflow-y: auto; /*permite scroll si el contenido es muy largo*/
         }
         
         /* Estilos auxiliares (NO MODIFICAR) */

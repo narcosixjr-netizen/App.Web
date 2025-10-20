@@ -134,43 +134,113 @@
         
         /* TU CÓDIGO AQUÍ */
         .header {
-            /* Completa según el enunciado */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
         }
         
         .nav-container {
-            /* Completa según el enunciado */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         
         .nav-menu {
-            /* Completa según el enunciado */
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
         
         .hero {
-            /* Completa según el enunciado */
+            position: relative;
+            height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
         }
         
         .badge-nuevo {
-            /* Completa según el enunciado */
+            position: absolute;
+            top: 100px;
+            right: 50px;
+            background: #f39c12;
+            padding: 10px 20px;
+            border-radius: 25px;
+            z-index: 10;
         }
         
         .cards-container {
-            /* Completa según el enunciado */
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         
         .card {
-            /* Completa según el enunciado */
+            position: relative;
+            flex: 1 1 300px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-sizing: border-box;
         }
         
         .icono-card {
-            /* Completa según el enunciado */
+            position: absolute;
+            top: -25px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            background: #e74c3c;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
         }
         
         .cta-button {
-            /* Completa según el enunciado */
+            display: inline-block;
+            padding: 15px 40px;
+            background: white;
+            color: #667eea;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
         }
         
         .boton-scroll {
-            /* Completa según el enunciado */
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 999;
         }
         
         /* Estilos adicionales (NO MODIFICAR) */
@@ -264,6 +334,20 @@
         .info-box li {
             margin: 8px 0;
         }
+        pre {
+            max-width: 1200px;
+            width: 90%;
+            margin: 40px auto 0 auto;
+            background: #f8f9fa;
+            color: #333;
+            border-radius: 5px;
+            padding: 16px 20px;
+            font-size: 1em;
+            font-family: inherit;
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            overflow-x: auto;
+}
     </style>
 </head>
 <body>
@@ -354,5 +438,6 @@
             <li>✓ Z-index correctamente aplicado para superponer elementos</li>
         </ul>
     </div>
+    <pre ><i>he utilizado la herramienta copilot, quería ver como funcionaba y no se como revertir los cambios, he tenido que borrar y volver a escribir como pensaba que iba el codigo, SOS</i></pre>
 </body>
 </html>

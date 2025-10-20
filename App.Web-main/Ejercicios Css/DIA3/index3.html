@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento de cajas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f2f2f2;
+        }
+        .caja {
+            width: 200px;
+            height: 200px;
+            background: rgb(15, 57, 116);
+            color: white;
+            padding: 5px;
+            margin: 20px;
+            display: inline-block;
+        }
+        .posicionada {
+            background: rgb(13, 96, 222);
+        }
+        /*tipos de posicionamiento
+           -normal: (static): posicionamiento por defecto con el que los navegadores acomodan todos los elementos
+           -Relativo (relative): nos permite posicionar una caja o elemento y despues moverla DESDE su lugar original, respetando su espacio
+           -Absoluto (absolute): nos permite posicionar una caja respecto a su contenedor y el resto de elementos se posicionan donde les corresponda
+           -Fija (fixed): nos permite posicionar una caja en una posicion fija a la pantalla, independientemente de tu contenedor
+           -Flotante (float): nos permite desplazar las cajas
+        */
+    </style>
+</head>
+<body>
+    <div class="caja">1</div>
+    <div class="caja posicionada">2</div>
+    <div class="caja">3</div>
+    <div class="caja">4</div>
+    <div class="caja">5</div>
+    <div class="caja">6</div>
+    <div class="caja">7</div>
+    <div class="caja">8</div>
+    <div class="caja">9</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 - Panel de Notificaciones</title>
+    <style>
+        /*
+        EJERCICIO 2: PANEL DE NOTIFICACIONES
+        
+        Crea un panel lateral de notificaciones que:
+        - Se quede pegado en la esquina superior derecha siempre visible
+        - Tenga un ancho de 320px
+        - Esté separado 20px del borde superior y derecho
+        - Cada notificación debe tener una caja con fondo blanco
+        - Las notificaciones deben tener espacio interno de 15px
+        - Debe haber separación entre cada notificación
+        - Añade esquinas redondeadas a las cajas
+        - Incluye una pequeña marca (punto de color) a la izquierda 
+          que se posicione de forma absoluta dentro de cada notificación
+        - El panel debe estar por encima de todo el contenido
+        */
+
+        /* SOLUCIÓN */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        .panel-notificaciones {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 320px;
+
+        }
+        .notificacion {
+            background-color: whitesmoke;
+            padding: 15px;
+            padding-left: 35px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .marca {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+        .marca-info {
+            background-color: #17a2b8;
+        }
+        .marca-exito {
+            background-color: #28a745;
+        }
+        .marca-alerta {
+            background-color: #ffc107;
+        }
+        .marca-error {
+            background-color: #dc3545;
+        }
+        .titulo-notif {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .texto-notif {
+            font-size: 14px;
+            color: #7f8c8c;
+            margin: 0;
+        }
+        .contenido-principal {
+            margin-right: 380px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="panel-notificaciones">
+        <div class="notificacion">
+            <div class="marca marca-info"></div>
+            <div class="titulo-notif">Nueva actualización</div>
+            <p class="texto-notif">El sistema se actualizará en 5 minutos</p>
+        </div>
+
+        <div class="notificacion">
+            <div class="marca marca-exito"></div>
+            <div class="titulo-notif">Tarea completada</div>
+            <p class="texto-notif">Tu informe ha sido enviado correctamente</p>
+        </div>
+
+        <div class="notificacion">
+            <div class="marca marca-alerta"></div>
+            <div class="titulo-notif">Atención requerida</div>
+            <p class="texto-notif">Tienes 3 mensajes sin leer</p>
+        </div>
+
+        <div class="notificacion">
+            <div class="marca marca-error"></div>
+            <div class="titulo-notif">Error de conexión</div>
+            <p class="texto-notif">No se pudo conectar con el servidor</p>
+        </div>
+    </div>
+
+    <div class="contenido-principal">
+        <h1>Contenido Principal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+</body>
+
+</html>

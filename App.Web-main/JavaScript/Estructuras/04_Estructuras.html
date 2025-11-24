@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ens">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructuras 04</title>
+    <script>
+            //ejercicio 2
+//        let contador = 0
+//      let suma = 0
+//    while (contador < 50) {
+//      contador++
+//    suma=suma+contador
+//        }      
+//        console.log ("el total es " +suma)
+            //ejercicio 3
+//      let con=0
+//      while (con < 31) {
+//      con++
+//          if (con % 2 == 0) {
+//          console.log (con)
+//          }
+//      }
+            //2ª forma
+//      let con=0
+//      while (con < 31) {
+//      con=con+2
+//      console.log (con)
+//      }
+            //ejercicio 4
+//        let con=0
+//        let sum=0
+//        while (con < 100){
+//            con++ 
+//            if (con%7==0) {
+//                sum++
+//                console.log(con)
+//            }
+//        }
+//        console.log ("los divisores de 7 del 1 al 100 son un total de " +sum)
+
+        let con=0
+        let oper=8
+        let div = document.getElementById(tabla)
+        while (con<=10) {
+            console.log (oper, " * " ,con, " = " ,(con*oper))
+            div.innerHTML = "<p>" + oper, " * " ,con, " = " ,(con*oper) + "</p>";
+            
+            con++
+        }
+            //
+/*        let con = 200
+        let div = 17
+        while (con < 1000) {
+            con++
+            if (con%17==0){
+                console.log(con)
+                break
+            }
+        }
+
+*/
+/*        //ejercicio penultimo
+        let fac=6;
+        let fac2=fac;
+        let sum=1;
+        while (fac2>0) {
+            sum=fac2*sum;
+            fac2=fac2-1;
+        }
+        console.log("el factorial de " +fac+ " es " +sum);
+*/
+/*
+        let a=0
+        let b=1
+        let cont=1
+        console.log (a)
+        while (cont<=10) {
+            console.log(b);
+            let aux = a+b;
+            a = b
+            b = aux
+            cont++
+        }
+*/
+</script>
+</head>
+<body>
+    <h1>bucle while</h1>
+    <p>while repite el codigo mientras la condición sea correcta</p>
+        <p>Tabla de multiplicar</p>
+        <p id="tabla"> </p>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show(){
+            let age = parseInt(document.getElementById("age").value)
+            console.log(age)
+            if (age>=18) {
+                document.getElementById("Over").textContent =  "Eres mayor de edad"
+            }
+            else {
+                document.getElementById("Over").textContent = "eres menor de edad"
+            }
+          //  console.log(resultado)
+            //document.getElementById("Over").textContent = resultado
+        }
+
+
+    </script>
+</head>
+<body>
+    <input type="number" id="age" placeholder="edad">
+    <button onclick="show()"> mayor de edad?</button>
+    <p id="Over"></p>
+</body>
+</html>

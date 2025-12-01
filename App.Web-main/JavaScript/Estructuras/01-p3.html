@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function generarTabla(){
+            let num1 = parseInt(document.getElementById("num1").value)
+            let resultado = "<ul>"
+            for (let x=1;x<=10; x++ ) {
+                resultado = resultado + "<li>" + num1 + "x" + x + " = " + (num1 * x) + "</li>"
+            }
+            resultado = resultado + "</ul>"
+                document.getElementById("res").innerHTML  = resultado
+        }
+    </script>
+</head>
+<body>
+    <h1>Ejercicio 1
+    </h1>
+    <input type="number" id="num1" placeholder="numero 1">
+    <button onclick="generarTabla()">Tabla</button>
+    <div id="res">
+    </div>
+</body>
+</html>

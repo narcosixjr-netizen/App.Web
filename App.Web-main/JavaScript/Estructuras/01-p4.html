@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcularAreaRectangulo() {
+            let base = parseInt(document.getElementById("base").value)
+            let altura = parseInt(document.getElementById("altura").value)
+            let res = "el area total es " + base * altura
+            document.getElementById("res").innerHTML  = res
+            document.getElementById("base").value = " "
+            document.getElementById("altura").value = " "
+        }
+        function calcularAreaCuadrado() {
+            let ladoCuadrado = parseInt(document.getElementById("ladoCua").value)
+            let resCua = "el area total es " + ladoCuadrado * ladoCuadrado
+            document.getElementById("resCua").innerHTML  = resCua
+            document.getElementById("ladoCua").value = " "
+        }
+        function calcularAreaRombo() {
+            let baseRom = parseInt(document.getElementById("baseRom").value)
+            let alturaRom = parseInt(document.getElementById("alturaRom").value)
+            let resRom = "el area total es " + baseRom * alturaRom
+            document.getElementById("resRom").innerHTML  = resRom
+            document.getElementById("baseRom").value = " "
+            document.getElementById("alturaRom").value = " "
+        }
+        function calcularAreaCircumferencia() {
+            let radioCirc = parseInt(document.getElementById("radioCirc").value)
+            let perCirc = "el perimetro de la circumferencia es de " +2*3.141592*radioCirc
+            let areaCirc = "el area de la circumferencia es de " +2*3.141592*(radioCirc*radioCirc)
+            document.getElementById("perCirc").innerHTML  = perCirc
+            document.getElementById("areaCirc").innerHTML  = areaCirc
+            document.getElementById("radioCirc").value = " "
+        }
+    </script>
+    <style>
+        body {
+            background-color: gray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 4
+    </h1>
+    <fieldset>   
+        <legend>area del rectangulo</legend>
+        <input type="number" id="base" placeholder="base del rectangulo"> <br>
+        <input type="number" id="altura" placeholder="altura del rectangulo"><br>
+        <button onclick="calcularAreaRectangulo()">calcular area</button><br>
+        <div id="res"></div>
+    </fieldset>
+    <fieldset>   
+        <legend>area del cuadrado</legend>
+        <input type="number" id="ladoCua" placeholder="lado del cuadrado"> <br>
+        <button onclick="calcularAreaCuadrado()">calcular area</button><br>
+        <div id="resCua"></div>
+    </fieldset>
+    <fieldset>   
+        <legend>area del rombo</legend>
+        <input type="number" id="baseRom" placeholder="base del Rombo"> <br>
+        <input type="number" id="alturaRom" placeholder="altura del Rombo"><br>
+        <button onclick="calcularAreaRombo()">calcular area</button><br>
+        <div id="resRom"></div>
+    </fieldset>
+    <fieldset>   
+        <legend>area y perimetro de la circumferencia</legend>
+        <input type="number" id="radioCirc" placeholder="Radio de la circumferencia"> <br>
+        <button onclick="calcularAreaCircumferencia()">calcular area</button><br>
+        <div id="perCirc"></div>
+        <div id="areaCirc"></div>
+    </fieldset>
+</body>
+</html>

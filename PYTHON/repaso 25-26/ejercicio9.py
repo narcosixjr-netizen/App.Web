@@ -1,6 +1,10 @@
+def suma_lista(lista):
+    return sum(lista)/len(lista)
+
 lista = []
-ent = int(input("ingrese un numero entero: "))
-while ent != -0:
+ent = 1
+num = int(input("cuantos numeros vas a mediar?: "))
+for i in range(1, num+1):
+    ent = int(input("dame un numero para la lista: "))
     lista.append(ent)
-    ent = int(input("ingrese un numero entero: "))
-print("la media de esta lista es",sum(lista)/len(lista))
+print( suma_lista(lista))

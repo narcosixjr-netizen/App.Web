@@ -1,7 +1,9 @@
+def suma_lista(lista):
+    return sum(lista)
+
 lista = []
-print("ingresa al menos 2 numeros enteros, para terminar ingresa -0")
-ent = int(input("dame un numero entero: "))
-while ent!= -0:
+ent = 1
+while ent != 0:
+    ent = int(input("dame un numero para la lista, 0 para cerrar lista: "))
     lista.append(ent)
-    ent = int(input("dame un numero entero: "))
-print("la suma de los numeros ingresados es: ", sum(lista))
+print( suma_lista(lista))

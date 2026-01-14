@@ -1,3 +1,6 @@
+def invertir_lista(lista):
+    return lista[::-1]
+
 ent = 1
 lista = []
 while ent != 0:
@@ -5,4 +8,4 @@ while ent != 0:
     if ent != 0:
         lista.append(ent)
 
-print(lista[::-1])
+print(invertir_lista(lista))
